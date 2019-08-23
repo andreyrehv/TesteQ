@@ -22,10 +22,19 @@ class CalculatorTests {
 	Calculator calculator = new Calculator();
 	@Test
     void addition() {
-        assertEquals(2, calculator.soma1(1, 1));
+        assertEquals(2, calculator.soma(1, 1));
     }
-	void addition() {
-        assertEquals(2, calculator.soma2(1.5, 1.5));
+	@Test
+	void sub() {
+        assertEquals(1, calculator.sub(2, 1));
+    }
+	@Test
+	void div() {
+        assertEquals(1, calculator.div(2, 2));
+    }
+	@Test
+	void mult() {
+        assertEquals(10, calculator.mult(2, 5));
     }
 
 }	

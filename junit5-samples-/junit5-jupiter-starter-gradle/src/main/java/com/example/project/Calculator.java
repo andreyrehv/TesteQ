@@ -12,11 +12,18 @@ package com.example.project;
 
 public class Calculator {
 
-	public int soma1 (int a, int b) {
+	public int soma (int a, int b) {
 		return a + b;
 	}
-	public double soma2 (double a, int b){
-		return a + b;
+	public double div (double a, double b){
+		return a / b;
 	}
-
+	
+	public int sub (int a, int b) {
+		return a - b;
+	}
+	
+	public int mult (int a, int b) {
+		return a * b;
+	}
 }
