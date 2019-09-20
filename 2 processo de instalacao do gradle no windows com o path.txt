@@ -1,0 +1,43 @@
+-----> COMANDOS PARA INSTALAÇÃO E FUNCIONAMENTO DO GRADLE <-----
+
+> set GRADLE_HOME=C:\Users\Aluno\Desktop\gradle-5.5-rc-4
+> echo %GRADLE_HOME% ---> pra ver se instalou com sucesso
+> echo %path% ---> exibir variáveis do sistema antes de incluir o PATH do gradle
+> set PATH=%PATH%;%GRADLE_HOME%\bin ---> incluir o PATH do gradle nas variáveis do sistema
+> gradle -v ---> iniciando gradle
+
+set projdir=C:\Users\Aluno\Desktop\junit5-samples\junit5-jupiter-starter-gradle
+>echo %projdir%
+dir %projdir%
+cd %projdir%
+gradle test
+
+COLOCAR O CODIGO ABAIXO NO NOTEPAD++ E SALVAR .JAVA DPS COLOCAR NESSE LOCAL = C:\Users\Aluno\Desktop\junit5-samples\junit5-jupiter-starter-gradle\src\test\java\com\example\project
+
+
+package com.example.project;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import com.example.project.*;
+import org.junit.jupiter.api.Test;
+
+class MyFirstJUnitJupiterTests {
+
+    private final Calculator calculator = new Calculator();
+
+    @Test
+    void addition() {
+        assertEquals(2, calculator.add(1, 1));
+    }
+
+}
+
+
+
+
+
+
+entrar em C:\Users\Aluno\Desktop\junit5-samples\junit5-jupiter-starter-gradle\build\reports\tests\test
+isso no caso é no projeto junity clonado
+apos acessar esse caminho entrar no index e vc verá o teste sendo feito
